@@ -1,0 +1,98 @@
+{% include "header.njk" %}
+      <!-- Основной контент страницы -->
+
+<main class="main-content content-schedule">
+  <h2 class="subpage-title"> {{ mainTitle }} </h2>
+  <section class="section-chedule">
+
+  <div class="table-container">
+	<table class="table-schedule">
+    <thead>
+    <th>
+      <tr>
+          <th>Порт отправления</th>
+          <th>Дата отправления</th>
+          <th>Порт назначения</th>
+          <th>Дата прихода</th>
+      </tr>
+    </th>
+    <th>
+      <select id="port-start" onchange="filter('');">
+        <option value="%">Выберите порт</option>
+        <option value="batumi">Батуми</option>
+        <option value="poti">Поти</option>
+        <option value="chernomorsk">Черноморск</option>
+      </select>
+    </th>
+    <th></th>
+    <th>
+      <select id="port-end" onchange="filter('');">
+        <option value="%">Выберите порт</option>
+        <option value="batumi">Батуми</option>
+        <option value="poti">Поти</option>
+        <option value="chernomorsk">Черноморск</option>
+      </select>
+    </th>
+    <th></th>
+  </thead>
+  
+  <tbody id="schedule">
+    <tr>
+      <td data-port="poti">Поти</td>
+      <td data-port="poti">2021-10-26</td>
+      <td data-port="chernomorsk">Черноморск</td>
+      <td data-port="chernomorsk">2021-10-28</td>
+    </tr>
+    
+    <tr>
+      <td data-port="chernomorsk">Черноморск</td>
+      <td data-port="chernomorsk">2021-10-28</td> 
+      <td data-port="batumi">Батуми</td>
+      <td data-port="batumi">2021-10-30</td>
+    </tr>
+    
+    <tr>
+      <td data-port="batumi">Батуми</td>
+      <td data-port="batumi">2021-10-30</td>
+      <td data-port="chernomorsk">Черноморск</td>
+      <td data-port="chernomorsk">2021-11-02</td>
+    </tr>
+    
+    <tr>
+      <td data-port="chernomorsk">Черноморск</td>
+      <td data-port="chernomorsk">2021-11-02</td>
+      <td data-port="poti">Поти</td>
+      <td data-port="poti">2021-11-04</td>
+    </tr>
+
+    <tr>
+      <td data-port="poti">Поти</td>
+      <td data-port="poti">2021-11-05</td>
+      <td data-port="chernomorsk">Черноморск</td>
+      <td data-port="chernomorsk">2021-11-07</td>
+    </tr>
+    
+    <tr>
+      <td data-port="chernomorsk">Черноморск</td>
+      <td data-port="chernomorsk">2021-11-07</td>
+      <td data-port="poti">Поти</td>
+      <td data-port="poti">2021-11-09</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+  <p class="tariff-text">
+    Действующие тарифы на перевозку грузов и пассажиров приведены <a href="http://www.ukrferry.com/tariffs" target="_black">здесь</a>
+  </p>
+
+  <p class="tariff-text">
+    Вы можете <a href="http://bookhere.ukrferry.com/" target="_black">забронировать</a> и оплатить  места на пароме для пассажиров и личного транспорта
+  </p>
+</section>
+
+
+</main>
+
+{% include "sidebar.njk" %}

@@ -131,7 +131,7 @@
 }
 
 .ports-block {
-  padding: 0 80px;
+  width: 100%;
   margin-top: 89px;
 }
 
@@ -154,8 +154,8 @@
   width: 300px;
   height: 138px;
   background: linear-gradient(77deg, rgba(255, 255, 255, 0.3) -8%, rgba(255, 255, 255, 0) 110%, rgba(255, 255, 255, 0.26) 110%);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
   /* Note: backdrop-filter has minimal browser support */
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 9px;

@@ -1,0 +1,11 @@
+{% include "header.njk" %}
+      <!-- Основной контент страницы -->
+
+<main class="main-content content-contact">
+  <h2 class="subpage-title"> {{ mainTitle }} </h2>
+  <section class="section-contacts">
+     {{ content | safe }}
+  </section>
+</main>
+
+{% include "sidebar.njk" %}

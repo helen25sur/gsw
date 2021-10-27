@@ -124,7 +124,7 @@ $padding: 0 80px;
 }
 
 .ports-block {
-  padding: $padding;
+  width: 100%;
   margin-top: 89px;
 
   .ports-list {
@@ -144,11 +144,10 @@ $padding: 0 80px;
         rgba(255, 255, 255, 0) 110%,
         rgba(255, 255, 255, 0.26) 110%
       );
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(6px);
       /* Note: backdrop-filter has minimal browser support */
 
       border: 1px solid hsla(0, 0%, 100%, 0.4);
-
       border-radius: 9px;
     }
   }

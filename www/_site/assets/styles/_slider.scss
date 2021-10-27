@@ -1,0 +1,165 @@
+$widthSlide: 800px;
+$heightSlide: $widthSlide / 1.4;
+
+.fleet-slider {
+  width: 100%;
+  height: $heightSlide;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1025px) {
+    padding: 40px 0;
+  }
+}
+
+.slider-list {
+  position: relative;
+  width: $widthSlide;
+  max-width: fit-content;
+  height: $heightSlide;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: relative;
+  width: $widthSlide;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  visibility: visible;
+
+  .slider-image {
+    display: block;
+    width: 700px;
+    flex-basis: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  &.hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    // display: none;
+  }
+}
+.btn-control {
+  align-self: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 10;
+
+  .icon-arrow {
+    width: 60px;
+
+    @media screen and (max-width: 850px) {
+      width: 40px;
+    }
+  }
+
+  .icon-prev {
+    transform: rotate(180deg);
+  }
+}
+
+// ================== стили адаптива для .fleet-slider и .slider-list, общие
+
+@media screen and (min-width: 851px) and (max-width: 1025px) {
+  .fleet-slider,
+  .slider-list {
+    height: calc(600px / 1.4);
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 850px) {
+  .fleet-slider,
+  .slider-list {
+    height: calc(500px / 1.4);
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 750px) {
+  .fleet-slider,
+  .slider-list {
+    height: calc(450px / 1.4);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 640px) {
+  .fleet-slider,
+  .slider-list {
+    height: calc(400px / 1.4);
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 500px) {
+  .fleet-slider,
+  .slider-list {
+    height: calc(350px / 1.4);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .fleet-slider,
+  .slider-list {
+    height: calc(300px / 1.4);
+  }
+}
+
+// ============ стили адаптива для .slider-item и .slider-image, общие
+
+@media screen and (min-width: 851px) and (max-width: 1025px) {
+  .slider-item,
+  .slider-image {
+    width: 600px;
+    height: calc(600px / 1.4);
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 850px) {
+  .slider-item,
+  .slider-image {
+    width: 500px;
+    height: calc(500px / 1.4);
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 750px) {
+  .slider-item,
+  .slider-image {
+    width: 400px;
+    height: calc(400px / 1.4);
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 640px) {
+  .slider-item,
+  .slider-image {
+    width: 300px;
+    height: calc(300px / 1.4);
+  }
+}
+
+@media screen and (min-width: 411px) and (max-width: 500px) {
+  .slider-item,
+  .slider-image {
+    width: 250px;
+    height: calc(250px / 1.4);
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .slider-item,
+  .slider-image {
+    width: 200px;
+    height: calc(200px / 1.4);
+  }
+}

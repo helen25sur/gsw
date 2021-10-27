@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+
+  {% for style in linkStyle %}
+    <link rel="stylesheet" href="{{ style }}">    
+  {% endfor %}
+  
+  <link rel="shortcut icon" href="{{ linkFavicon }}" type="image/x-icon">
+
+ {% for itemSrcipt in allScripts %}
+  <script src="{{ itemSrcipt }}" defer></script>
+{% endfor %}
+</head>
+
+<body class="body">
+  <div class="overlay">
+
+
+    <!-- Меню и логотип -->
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-menu">
+
+          <ul class="menu-list">
+            <li class="menu-item"><a href="/" class="menu-link">Главная</a></li>
+            <li class="menu-item"><a href="/pages/schedule" class="menu-link">Расписание и тарифы</a></li>
+          </ul>
+
+          <div class="block-logo">
+            <a href="/" class="menu-link main-logo-link">
+              <img src="{{ srcLogo }}" width="150" alt="LLC GEORGIA SEA WAYS">
+            </a>
+          </div>
+
+          <ul class="menu-list">
+            <li class="menu-item"><a href="/pages/fleet" class="menu-link">Флот</a></li>
+            <li class="menu-item"><a href="/pages/contacts" class="menu-link">Контакты</a></li>
+          </ul>
+          <button class="burger-menu hidden"></button>
+        </nav>
+
+      </header>

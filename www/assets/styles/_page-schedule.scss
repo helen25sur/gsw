@@ -1,0 +1,119 @@
+.content-schedule {
+  padding-top: 40px;
+
+  @media screen and (min-width: 471px) and (max-width: 665px) {
+    padding: 40px 20px;
+  }
+
+  @media screen and (max-width: 470px) {
+    padding: 40px 10px;
+  }
+}
+
+.section-chedule {
+  width: 95%;
+
+  .table-container {
+    width: 100%;
+    margin: 30px 0;
+    padding: 10px 20px;
+    background: linear-gradient(
+      77deg,
+      rgba(255, 255, 255, 0.3) -8%,
+      rgba(255, 255, 255, 0) 110%,
+      rgba(255, 255, 255, 0.26) 110%
+    );
+    backdrop-filter: blur(24px);
+    border: 1px solid hsla(0, 0%, 100%, 0.35);
+    border-radius: 9px;
+
+    @media screen and (min-width: 471px) and (max-width: 545px) {
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 470px) {
+      padding: 5px;
+    }
+
+    .table-schedule {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        @media screen and (max-width: 930px) {
+          font-size: 16px;
+        }
+        @media screen and (max-width: 605px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 545px) {
+          padding: 3px;
+          font-size: 12px;
+        }
+        @media screen and (max-width: 470px) {
+          font-size: 10px;
+        }
+      }
+
+      th {
+        text-align: left;
+        padding-bottom: 10px;
+      }
+
+      td {
+        padding: 5px 10px;
+
+        @media screen and (max-width: 930px) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: 665px) {
+          padding: 5px;
+        }
+
+        @media screen and (max-width: 605px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 545px) {
+          padding: 3px;
+          font-size: 12px;
+        }
+        @media screen and (max-width: 470px) {
+          font-size: 10px;
+        }
+      }
+
+      select {
+        @media screen and (max-width: 930px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 665px) {
+          width: 115px;
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 570px) {
+          width: 100px;
+        }
+
+        @media screen and (max-width: 470px) {
+          width: 85px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .tariff-text {
+    @media screen and (max-width: 665px) {
+      font-size: 16px;
+    }
+
+    a {
+      color: #beefff;
+      text-decoration: none;
+    }
+  }
+}

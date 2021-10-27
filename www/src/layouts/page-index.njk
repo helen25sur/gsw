@@ -1,0 +1,32 @@
+{% include "header.njk" %}
+      <!-- Основной контент страницы -->
+      <main class="main-content">
+
+        <div class="main-text">
+          <h1 class="main-title">{{ mainTitle }}</h1>
+          <p class="promo-text">
+            {{ promoText }}
+          </p>
+        </div>
+        <div class="shedule-block-link">
+          <a href="#" class="shedule-link">Расписание и тарифы</a>
+        </div>
+
+
+        <div class="ports-block">
+          <ul class="ports-list">
+
+          {% for port in ports %}
+
+          <li class="port-item">
+              <span class="name-country">{{ port.country }}</span>
+              <span class="name-port">{{ port.port }}</span>
+           </li>
+
+            {% endfor %}
+          </ul>
+        </div>
+      </main>
+  
+
+   {% include "sidebar.njk" %}
