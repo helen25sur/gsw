@@ -10,77 +10,22 @@
   {% include "slider.njk" %}
 
 <section class="technical-data">
-  <h3 class="technical-title">Технические данные</h3>
-  <p class="technical-text"><b>Класс регистра:</b> Lloyd register 100A1 Ро-Ро Cargo and Passenger ferry</p>
-  <p class="technical-text"><b>Построен:</b> 1987 год, Германия</p>
+  <h3 class="technical-title">{{ subTitle }}</h3>
+  {% for text in technicalText %}
+    
+  <p class="technical-text"><b>{{ text.techName }}</b> {{text.descr }}</p>
+  {% endfor %}
 
   <table class="technical-table">
     <tbody>
+     {% for feature in tableData %}
       <tr>
-        <td class="feature-name">Длина полная</td>
-        <td class="feature-data">190.9</td>
-        <td class="feature-data">м</td>
+        <td class="feature-name">{{ feature.featureName }}</td>
+        <td class="feature-data">{{ feature.featureData }}</td>
+        <td class="feature-data">{{ feature.units }}</td>
       </tr>
-      <tr>
-        <td class="feature-name">Ширина наибольшая</td>
-        <td class="feature-data">28</td>
-        <td class="feature-data">м</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Высота борта до верхней палубы</td>
-        <td class="feature-data">15.20</td>
-        <td class="feature-data">м</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Осадка наибольшая</td>
-        <td class="feature-data">6.5</td>
-        <td class="feature-data">м</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Дедвейт при осадке 6.60 м</td>
-        <td class="feature-data">9341</td>
-        <td class="feature-data">т</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Валовая вместимость</td>
-        <td class="feature-data">22341</td>
-        <td class="feature-data">рег. т.</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Эксплуатационная скорость</td>
-        <td class="feature-data">14,5</td>
-        <td class="feature-data">узлов</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Мощность главных двигателей</td>
-        <td class="feature-data">10600</td>
-        <td class="feature-data">кВт</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Пассажировместимость</td>
-        <td class="feature-data">132</td>
-        <td class="feature-data">чел</td>
-      </tr>
-      <tr>
-        <td class="feature-name">2 палубы</td>
-        <td class="feature-data">Главная палуба</td>
-        <td class="feature-data">Верхняя палуба</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Площадь палубы, м2</td>
-        <td class="feature-data">4000</td>
-        <td class="feature-data">4500</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Нагрузка, т/м2</td>
-        <td class="feature-data">3,0</td>
-        <td class="feature-data">3,0</td>
-      </tr>
-      <tr>
-        <td class="feature-name">Линейные метры</td>
-        <td class="feature-data">768</td>
-        <td class="feature-data">932</td>
-      </tr>
+      {% endfor %}
+     
     </tbody>
   </table>
 <section>

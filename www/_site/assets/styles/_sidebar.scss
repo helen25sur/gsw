@@ -9,7 +9,7 @@
     height: fit-content;
     position: absolute;
     top: 150px;
-    width: 120px;
+    width: 140px;
     height: 100px;
     right: 50%;
     transform: translateX(50%);
@@ -42,11 +42,17 @@
     justify-content: center;
   }
   .language {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
     background-color: transparent;
-    border: none;
     color: $colorWhite;
     font-weight: bold;
     cursor: pointer;
+
+    &:hover {
+      border-color: $colorWhite;
+    }
 
     @media screen and (min-width: 666px) and (max-width: 850px) {
       font-size: 32px;

@@ -1,0 +1,41 @@
+{
+  "linkStyle": [
+    "../../assets/styles/normalize.css",
+    "../../assets/styles/style.css"
+  ],
+  "linkFavicon": "../../assets/images/icons/icon.ico",
+  "mainScripts": [
+    "../../assets/script/language-switch.js",
+    "../../assets/script/mobile-menu.js"
+  ],
+  "srcLogo": "../../assets/images/icons/logo.png",
+  "homeHref": "/eng",
+  "firstListMenu": [
+    {
+      "page": "Home",
+      "href": "/eng"
+    },
+    {
+      "page": "Shedules and tariffs",
+      "href": "/eng/schedule"
+    },
+    {
+      "page": "Contract of carriage",
+      "href": "../../assets/documents/contract_eng.pdf"
+    }
+  ],
+  "secondListMenu": [
+    {
+      "page": "Fleet",
+      "href": "/eng/fleet"
+    },
+    {
+      "page": "Contacts",
+      "href": "/eng/contacts"
+    },
+    {
+      "page": "Terms and Conditions",
+      "href": "../../assets/documents/terms_eng.pdf"
+    }
+  ]
+}

@@ -64,6 +64,7 @@ $padding: 0 80px;
       padding-bottom: 140px;
       border-left: $border;
       border-right: $border;
+      overflow: hidden;
 
       @media screen and (min-width: 851px) and (max-width: 1025px) {
         // max-width: 990px;

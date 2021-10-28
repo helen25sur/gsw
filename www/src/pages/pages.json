@@ -1,0 +1,41 @@
+{
+  "linkStyle": [
+    "../../assets/styles/normalize.css",
+    "../../assets/styles/style.css"
+  ],
+  "linkFavicon": "../../assets/images/icons/icon.ico",
+  "mainScripts": [
+    "../../assets/script/language-switch.js",
+    "../../assets/script/mobile-menu.js"
+  ],
+  "srcLogo": "../../assets/images/icons/logo.png",
+  "homeHref": "/",
+  "firstListMenu": [
+    {
+      "page": "Главная",
+      "href": "/"
+    },
+    {
+      "page": "Расписание и тарифы",
+      "href": "/pages/schedule"
+    },
+    {
+      "page": "Договор перевозки",
+      "href": "/assets/documents/contract_rus.pdf"
+    }
+  ],
+  "secondListMenu": [
+    {
+      "page": "Флот",
+      "href": "/pages/fleet"
+    },
+    {
+      "page": "Контакты",
+      "href": "/pages/contacts"
+    },
+    {
+      "page": "Условия и положения",
+      "href": "/assets/documents/terms_ukr.pdf"
+    }
+  ]
+}

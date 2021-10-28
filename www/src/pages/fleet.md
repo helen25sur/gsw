@@ -2,14 +2,61 @@
 layout: "page-fleet.njk"
 title: "Флот"
 
-linkStyle:
-  ["../../assets/styles/normalize.css", "../../assets/styles/style.css"]
+addedScripts: ["../../assets/script/fleet-slider.js"]
 
-linkFavicon: "../../assets/images/icons/icon.ico"
-allScripts: ["../../assets/script/fleet-slider.js"]
-
-srcLogo: "../../assets/images/icons/logo.png"
 mainTitle: "Автомобильно - железнодорожный / пассажирский паром «Вильнюс»"
+
+subTitle: "Технические данные"
+
+technicalText:
+  [
+    {
+      techName: "Класс регистра:",
+      descr: "Lloyd register 100A1 Ро-Ро Cargo and Passenger ferry",
+    },
+    { techName: "Построен:", descr: "1987 год, Германия" },
+  ]
+
+tableData:
+  [
+    { featureName: "Длина полная", featureData: "190.9", units: "м" },
+    { featureName: "Ширина наибольшая", featureData: "28", units: "м" },
+    {
+      featureName: "Высота борта до верхней палубы",
+      featureData: "15.20",
+      units: "м",
+    },
+    { featureName: "Осадка наибольшая", featureData: "6.5", units: "м" },
+    {
+      featureName: "Дедвейт при осадке 6.60 м",
+      featureData: "9341",
+      units: "т",
+    },
+    {
+      featureName: "Валовая вместимость",
+      featureData: "22341",
+      units: "рег. т.",
+    },
+    {
+      featureName: "Эксплуатационная скорость",
+      featureData: "14,5",
+      units: "узлов",
+    },
+    {
+      featureName: "Мощность главных двигателей",
+      featureData: "10600",
+      units: "кВт",
+    },
+    { featureName: "Пассажировместимость", featureData: "132", units: "чел" },
+    {
+      featureName: "2 палубы",
+      featureData: "Главная палуба",
+      units: "Верхняя палуба",
+    },
+    { featureName: "Площадь палубы, м2", featureData: "4000", units: "4500" },
+    { featureName: "Нагрузка, т/м2", featureData: "3,0", units: "3,0" },
+    { featureName: "Линейные метры", featureData: "768", units: "932" },
+  ]
 ---
 
 <p class="fleet-text">Автомобильно - железнодорожный / пассажирский паром «Вильнюс» - современное грузо-пассажирское судно, построенное в 1987 г. в Германии. Находится под классификационным надзором Ллойда. Обладает сертификатом книги рекордов Гиннеса, как самое большое судно в мире в классе автомобильно-железнодорожных пассажирских паромов.</p>

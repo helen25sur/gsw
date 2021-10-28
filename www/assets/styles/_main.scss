@@ -9,12 +9,9 @@
     padding: 40px 10px;
   }
 
-  // @media screen and (max-width: 500px) {
-  //   padding: 20px 10px;
-  // }
-
   .main-title {
     margin: 0 auto;
+    margin-top: 30px;
     padding: 0;
     font-family: $font-family2;
     font-size: 72px;
@@ -24,16 +21,18 @@
     text-align: center;
 
     @media screen and (min-width: 501px) and (max-width: 850px) {
+      margin-top: 0;
       font-size: 64px;
     }
 
     @media screen and (max-width: 500px) {
+      margin-top: 0;
       font-size: 58px;
     }
   }
 
   .promo-text {
-    margin-top: 9px;
+    margin-top: 26px;
     font-size: 24px;
     font-weight: 300;
     text-align: center;
@@ -44,58 +43,58 @@
   }
 }
 
-.shedule-block-link {
-  display: block;
-  width: 348px;
-  height: 106px;
-  margin-top: 17px;
-  background: url(../images/icons/epicButton.svg) no-repeat center;
+// .shedule-block-link {
+//   display: block;
+//   width: 348px;
+//   height: 106px;
+//   margin-top: 17px;
+//   background: url(../images/icons/epicButton.svg) no-repeat center;
 
-  @media screen and (min-width: 501px) and (max-width: 850px) {
-    width: 400px;
-    height: 120px;
-  }
+//   @media screen and (min-width: 501px) and (max-width: 850px) {
+//     width: 400px;
+//     height: 120px;
+//   }
 
-  @media screen and (max-width: 500px) {
-    width: 350px;
-    height: 100px;
-  }
+//   @media screen and (max-width: 500px) {
+//     width: 350px;
+//     height: 100px;
+//   }
 
-  .shedule-link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding-right: 60px;
-    color: $colorWhite;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: $font-size;
+//   .shedule-link {
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     height: 100%;
+//     padding-right: 60px;
+//     color: $colorWhite;
+//     text-decoration: none;
+//     font-weight: 700;
+//     font-size: $font-size;
 
-    @media screen and (min-width: 501px) and (max-width: 850px) {
-      font-size: 20px;
-    }
+//     @media screen and (min-width: 501px) and (max-width: 850px) {
+//       font-size: 20px;
+//     }
 
-    @media screen and (max-width: 500px) {
-      font-size: 16px;
-    }
+//     @media screen and (max-width: 500px) {
+//       font-size: 16px;
+//     }
 
-    &::after {
-      content: "";
-      right: 30px;
-      width: 60px;
-      height: 5px;
-      position: absolute;
-      background: url(../images/icons/arrow.svg) no-repeat center;
+//     &::after {
+//       content: "";
+//       right: 30px;
+//       width: 60px;
+//       height: 5px;
+//       position: absolute;
+//       background: url(../images/icons/arrow.svg) no-repeat center;
 
-      @media screen and (max-width: 850px) {
-        right: 40px;
-      }
-    }
-  }
-}
+//       @media screen and (max-width: 850px) {
+//         right: 40px;
+//       }
+//     }
+//   }
+// }
 
 .ports-block {
   width: 100%;
@@ -109,7 +108,15 @@
     margin-top: 40px;
   }
 
+  .link-shedule {
+    width: 100%;
+    height: 100%;
+    color: $colorWhite;
+    text-decoration: none;
+  }
+
   .ports-list {
+    width: 100%;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -123,13 +130,14 @@
 
     .port-item {
       position: relative;
-      width: 300px;
-      height: 138px;
+      // width: 220px;
+      flex-basis: 22%;
+      height: 160px;
       padding: 16px;
       background: linear-gradient(
         77deg,
-        rgba(255, 255, 255, 0.3) -8%,
-        rgba(255, 255, 255, 0) 110%,
+        rgba(0, 0, 0, 0.2) -8%,
+        rgba(0, 0, 0, 0.2) 110%,
         rgba(255, 255, 255, 0.26) 110%
       );
       backdrop-filter: blur(12px);
@@ -141,6 +149,7 @@
         margin-bottom: 24px;
         width: 80%;
         height: 165px;
+        flex-basis: auto;
       }
 
       .name-country {
@@ -158,7 +167,7 @@
 
       .name-port {
         display: block;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 300;
         line-height: 140%;
 
@@ -175,7 +184,7 @@
     .port-item::after {
       content: "";
       position: absolute;
-      width: 120px;
+      width: 160px;
       height: 1px;
       bottom: 16px;
       background-color: $colorWhite;

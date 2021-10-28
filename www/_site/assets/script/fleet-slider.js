@@ -5,13 +5,12 @@ const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 
 const WIDTH = sliderBlock.offsetWidth;
-console.log(WIDTH);
 
 let counter = 0;
 arrSlider[0].querySelector('.slider-image').style.opacity = 1;
 
 next.addEventListener('click', () => {
-  console.log(counter);
+  // console.log(counter);
   nextSlide(counter);
   if (counter >= arrSlider.length - 1) {
     counter = 0;
@@ -21,7 +20,7 @@ next.addEventListener('click', () => {
 })
 
 prev.addEventListener('click', () => {
-  console.log(counter);
+  // console.log(counter);
   prevSlide(counter);
   if (counter == 0) {
     counter = arrSlider.length - 1;
@@ -54,9 +53,9 @@ function nextSlide(counter) {
     nextSlide.classList.remove('hidden');
     nextImage.style.opacity = '1';
 
-    console.log('prev', prevImage);
-    console.log('current', currentImage);
-    console.log('next', nextImage);
+    // console.log('prev', prevImage);
+    // console.log('current', currentImage);
+    // console.log('next', nextImage);
 
   }
 }
@@ -84,9 +83,9 @@ function prevSlide(counter) {
     nextSlide.classList.remove('hidden');
     nextImage.style.opacity = '1';
 
-    console.log('prev', prevImage);
-    console.log('current', currentImage);
-    console.log('next', nextImage);
+    // console.log('prev', prevImage);
+    // console.log('current', currentImage);
+    // console.log('next', nextImage);
 
   }
 }

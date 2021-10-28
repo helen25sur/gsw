@@ -19,5 +19,8 @@
   "homepage": "https://github.com/helen25sur/gsw#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }

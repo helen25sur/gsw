@@ -8,12 +8,13 @@
             {{ promoText }}
           </p>
         </div>
-        <div class="shedule-block-link">
+        {# <div class="shedule-block-link">
           <a href="#" class="shedule-link">Расписание и тарифы</a>
-        </div>
+        </div> #}
 
 
         <div class="ports-block">
+          <a href="/pages/schedule" class="link-shedule">
           <ul class="ports-list">
 
           {% for port in ports %}
@@ -25,6 +26,7 @@
 
             {% endfor %}
           </ul>
+          </a>
         </div>
       </main>
   

@@ -16,6 +16,12 @@
   <link rel="shortcut icon" href="../../assets/images/icons/icon.ico" type="image/x-icon">
 
  
+  <script src="../../assets/script/language-switch.js" defer></script>
+
+  <script src="../../assets/script/mobile-menu.js" defer></script>
+
+
+
   <script src="../../assets/script/fleet-slider.js" defer></script>
 
 </head>
@@ -30,21 +36,45 @@
         <nav class="main-menu">
 
           <ul class="menu-list">
+
+          
+            
             <li class="menu-item"><a href="/" class="menu-link">Главная</a></li>
+            
+          
+            
             <li class="menu-item"><a href="/pages/schedule" class="menu-link">Расписание и тарифы</a></li>
+            
+          
+            
+            <li class="menu-item"><a href="/assets/documents/contract_rus.pdf" class="menu-link">Договор перевозки</a></li>
+            
+          
           </ul>
 
           <div class="block-logo">
             <a href="/" class="menu-link main-logo-link">
-              <img src="../../assets/images/icons/logo.png" width="150" alt="LLC GEORGIA SEA WAYS">
+              <img class="logotype" src="../../assets/images/icons/logo.png" width="150" alt="LLC GEORGIA SEA WAYS">
             </a>
           </div>
 
           <ul class="menu-list">
-            <li class="menu-item"><a href="/pages/fleet" class="menu-link">Флот</a></li>
-            <li class="menu-item"><a href="/pages/contacts" class="menu-link">Контакты</a></li>
+
+           
+
+           <li class="menu-item"><a href="/pages/fleet" class="menu-link">Флот</a></li>
+             
+             
+
+           <li class="menu-item"><a href="/pages/contacts" class="menu-link">Контакты</a></li>
+             
+             
+
+           <li class="menu-item"><a href="/assets/documents/terms_ukr.pdf" class="menu-link">Условия и положения</a></li>
+             
+             
           </ul>
-          <button class="burger-menu hidden"></button>
+          <button id="burger-menu" class="burger-menu hidden"></button>
         </nav>
 
       </header>
@@ -106,76 +136,96 @@
 
 <section class="technical-data">
   <h3 class="technical-title">Технические данные</h3>
+  
+    
   <p class="technical-text"><b>Класс регистра:</b> Lloyd register 100A1 Ро-Ро Cargo and Passenger ferry</p>
+  
+    
   <p class="technical-text"><b>Построен:</b> 1987 год, Германия</p>
+  
 
   <table class="technical-table">
     <tbody>
+     
       <tr>
         <td class="feature-name">Длина полная</td>
         <td class="feature-data">190.9</td>
         <td class="feature-data">м</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Ширина наибольшая</td>
         <td class="feature-data">28</td>
         <td class="feature-data">м</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Высота борта до верхней палубы</td>
         <td class="feature-data">15.20</td>
         <td class="feature-data">м</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Осадка наибольшая</td>
         <td class="feature-data">6.5</td>
         <td class="feature-data">м</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Дедвейт при осадке 6.60 м</td>
         <td class="feature-data">9341</td>
         <td class="feature-data">т</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Валовая вместимость</td>
         <td class="feature-data">22341</td>
         <td class="feature-data">рег. т.</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Эксплуатационная скорость</td>
         <td class="feature-data">14,5</td>
         <td class="feature-data">узлов</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Мощность главных двигателей</td>
         <td class="feature-data">10600</td>
         <td class="feature-data">кВт</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Пассажировместимость</td>
         <td class="feature-data">132</td>
         <td class="feature-data">чел</td>
       </tr>
+      
       <tr>
         <td class="feature-name">2 палубы</td>
         <td class="feature-data">Главная палуба</td>
         <td class="feature-data">Верхняя палуба</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Площадь палубы, м2</td>
         <td class="feature-data">4000</td>
         <td class="feature-data">4500</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Нагрузка, т/м2</td>
         <td class="feature-data">3,0</td>
         <td class="feature-data">3,0</td>
       </tr>
+      
       <tr>
         <td class="feature-name">Линейные метры</td>
         <td class="feature-data">768</td>
         <td class="feature-data">932</td>
       </tr>
+      
+     
     </tbody>
   </table>
 <section>
@@ -187,8 +237,8 @@
  
  <aside class="sidebar">
       <div class="language-block">
-        <button class="language language-rus">Рус</button>
-        <button class="language language-eng">Eng</button>
+        <button id="btn-rus" class="language language-rus">Рус</button>
+        <button id="btn-eng" class="language language-eng">Eng</button>
       </div>
     </aside>
 

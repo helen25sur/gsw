@@ -17,7 +17,7 @@
       </tr>
     </th>
     <th>
-      <select id="port-start" onchange="filter('');">
+      <select id="port-start" onchange="filterPort('');">
         <option value="%">Выберите порт</option>
         <option value="batumi">Батуми</option>
         <option value="poti">Поти</option>
@@ -26,7 +26,7 @@
     </th>
     <th></th>
     <th>
-      <select id="port-end" onchange="filter('');">
+      <select id="port-end" onchange="filterPort('');">
         <option value="%">Выберите порт</option>
         <option value="batumi">Батуми</option>
         <option value="poti">Поти</option>
@@ -38,45 +38,45 @@
   
   <tbody id="schedule">
     <tr>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-10-26</td>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-10-28</td>
+      <td data-direction="departure" data-port="poti">Поти</td>
+      <td data-direction="departure" data-port="poti">2021-10-26</td>
+      <td data-direction="destination" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-10-28</td>
     </tr>
     
     <tr>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-10-28</td> 
-      <td data-port="batumi">Батуми</td>
-      <td data-port="batumi">2021-10-30</td>
+      <td data-direction="departure" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-10-28</td> 
+      <td data-direction="destination" data-port="batumi">Батуми</td>
+      <td data-direction="destination" data-port="batumi">2021-10-30</td>
     </tr>
     
     <tr>
-      <td data-port="batumi">Батуми</td>
-      <td data-port="batumi">2021-10-30</td>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-02</td>
+      <td data-direction="departure" data-port="batumi">Батуми</td>
+      <td data-direction="departure" data-port="batumi">2021-10-30</td>
+      <td data-direction="destination" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-02</td>
     </tr>
     
     <tr>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-02</td>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-11-04</td>
+      <td data-direction="departure" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-02</td>
+      <td data-direction="destination" data-port="poti">Поти</td>
+      <td data-direction="destination" data-port="poti">2021-11-04</td>
     </tr>
 
     <tr>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-11-05</td>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-07</td>
+      <td data-direction="departure" data-port="poti">Поти</td>
+      <td data-direction="departure" data-port="poti">2021-11-05</td>
+      <td data-direction="destination" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-07</td>
     </tr>
     
     <tr>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-07</td>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-11-09</td>
+      <td data-direction="departure" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-07</td>
+      <td data-direction="destination" data-port="poti">Поти</td>
+      <td data-direction="destination" data-port="poti">2021-11-09</td>
     </tr>
   </tbody>
 </table>

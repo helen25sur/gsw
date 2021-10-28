@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shedules Ro-Ro/Rail/Passenger ferry «Vilnius»</title>
+
+  
+    <link rel="stylesheet" href="../../assets/styles/normalize.css">    
+  
+    <link rel="stylesheet" href="../../assets/styles/style.css">    
+  
+  
+  <link rel="shortcut icon" href="../../assets/images/icons/icon.ico" type="image/x-icon">
+
+ 
+  <script src="../../assets/script/language-switch.js" defer></script>
+
+  <script src="../../assets/script/mobile-menu.js" defer></script>
+
+
+
+  <script src="../../assets/script/filter.js" defer></script>
+
+  <script src="../../assets/script/ajax.js" defer></script>
+
+</head>
+
+<body class="body">
+  <div class="overlay">
+
+
+    <!-- Меню и логотип -->
+    <div class="container">
+      <header class="main-header">
+        <nav class="main-menu">
+
+          <ul class="menu-list">
+
+          
+            
+            <li class="menu-item"><a href="/eng" class="menu-link">Home</a></li>
+            
+          
+            
+            <li class="menu-item"><a href="/eng/schedule" class="menu-link">Shedules and tariffs</a></li>
+            
+          
+            
+            <li class="menu-item"><a href="../../assets/documents/contract_eng.pdf" class="menu-link">Contract of carriage</a></li>
+            
+          
+          </ul>
+
+          <div class="block-logo">
+            <a href="/eng" class="menu-link main-logo-link">
+              <img class="logotype" src="../../assets/images/icons/logo.png" width="150" alt="LLC GEORGIA SEA WAYS">
+            </a>
+          </div>
+
+          <ul class="menu-list">
+
+           
+
+           <li class="menu-item"><a href="/eng/fleet" class="menu-link">Fleet</a></li>
+             
+             
+
+           <li class="menu-item"><a href="/eng/contacts" class="menu-link">Contacts</a></li>
+             
+             
+
+           <li class="menu-item"><a href="../../assets/documents/terms_eng.pdf" class="menu-link">Terms and Conditions</a></li>
+             
+             
+          </ul>
+          <button id="burger-menu" class="burger-menu hidden"></button>
+        </nav>
+
+      </header>
+
+      <!-- Основной контент страницы -->
+
+<main class="main-content content-schedule">
+  <h2 class="subpage-title"> Shedules and tariffs </h2>
+  <section class="section-chedule">
+
+  <div class="table-container">
+	<table class="table-schedule">
+    <thead>
+    <th>
+      <tr>
+          <th>Port of shipment</th>
+          <th>Departure date</th>
+          <th>Port of destination</th>
+          <th>Arrival date</th>
+      </tr>
+    </th>
+    <th>
+      <select id="port-start" onchange="filterPort('');">
+        <option value="%">Select from list</option>
+        <option value="batumi">Batumi</option>
+        <option value="poti">Poti</option>
+        <option value="chernomorsk">Chornomorsk</option>
+      </select>
+    </th>
+    <th></th>
+    <th>
+      <select id="port-end" onchange="filterPort('');">
+        <option value="%">Select from list</option>
+        <option value="batumi">Batumi</option>
+        <option value="poti">Poti</option>
+        <option value="chernomorsk">Chornomorsk</option>
+      </select>
+    </th>
+    <th></th>
+  </thead>
+  
+  <tbody id="schedule">
+    <tr>
+      <td data-direction="departure" data-port="poti">Poti</td>
+      <td data-direction="departure" data-port="poti">2021-10-26</td>
+      <td data-direction="destination" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-10-28</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-10-28</td> 
+      <td data-direction="destination" data-port="batumi">Batumi</td>
+      <td data-direction="destination" data-port="batumi">2021-10-30</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="batumi">Batumi</td>
+      <td data-direction="departure" data-port="batumi">2021-10-30</td>
+      <td data-direction="destination" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-02</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-02</td>
+      <td data-direction="destination" data-port="poti">Poti</td>
+      <td data-direction="destination" data-port="poti">2021-11-04</td>
+    </tr>
+
+    <tr>
+      <td data-direction="departure" data-port="poti">Poti</td>
+      <td data-direction="departure" data-port="poti">2021-11-05</td>
+      <td data-direction="destination" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-07</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-07</td>
+      <td data-direction="destination" data-port="poti">Poti</td>
+      <td data-direction="destination" data-port="poti">2021-11-09</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+  <p class="tariff-text">
+    The current tariffs for the carriage of goods and passengers are listed <a href="https://www.ukrferry.com/en/tariffs" target="_black">here</a>
+  </p>
+
+  <p class="tariff-text">
+    You can <a href="https://bookhere.ukrferry.com/eng" target="_black">booking</a> places on a ferry for passengers and private vehicle
+  </p>
+</section>
+
+
+</main>
+
+ </div>
+ 
+ <aside class="sidebar">
+      <div class="language-block">
+        <button id="btn-rus" class="language language-rus">Рус</button>
+        <button id="btn-eng" class="language language-eng">Eng</button>
+      </div>
+    </aside>
+
+
+</body>
+
+</html>

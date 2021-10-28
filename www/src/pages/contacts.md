@@ -2,13 +2,8 @@
 layout: "page-contacts.njk"
 title: "Контакты"
 
-linkStyle:
-  ["../../assets/styles/normalize.css", "../../assets/styles/style.css"]
+addedScripts: [""]
 
-linkFavicon: "../../assets/images/icons/icon.ico"
-allScripts: [""]
-
-srcLogo: "../../assets/images/icons/logo.png"
 mainTitle: "Контакты"
 ---
 

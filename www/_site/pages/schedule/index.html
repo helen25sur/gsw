@@ -16,7 +16,15 @@
   <link rel="shortcut icon" href="../../assets/images/icons/icon.ico" type="image/x-icon">
 
  
+  <script src="../../assets/script/language-switch.js" defer></script>
+
+  <script src="../../assets/script/mobile-menu.js" defer></script>
+
+
+
   <script src="../../assets/script/filter.js" defer></script>
+
+  <script src="../../assets/script/ajax.js" defer></script>
 
 </head>
 
@@ -30,21 +38,45 @@
         <nav class="main-menu">
 
           <ul class="menu-list">
+
+          
+            
             <li class="menu-item"><a href="/" class="menu-link">Главная</a></li>
+            
+          
+            
             <li class="menu-item"><a href="/pages/schedule" class="menu-link">Расписание и тарифы</a></li>
+            
+          
+            
+            <li class="menu-item"><a href="/assets/documents/contract_rus.pdf" class="menu-link">Договор перевозки</a></li>
+            
+          
           </ul>
 
           <div class="block-logo">
             <a href="/" class="menu-link main-logo-link">
-              <img src="../../assets/images/icons/logo.png" width="150" alt="LLC GEORGIA SEA WAYS">
+              <img class="logotype" src="../../assets/images/icons/logo.png" width="150" alt="LLC GEORGIA SEA WAYS">
             </a>
           </div>
 
           <ul class="menu-list">
-            <li class="menu-item"><a href="/pages/fleet" class="menu-link">Флот</a></li>
-            <li class="menu-item"><a href="/pages/contacts" class="menu-link">Контакты</a></li>
+
+           
+
+           <li class="menu-item"><a href="/pages/fleet" class="menu-link">Флот</a></li>
+             
+             
+
+           <li class="menu-item"><a href="/pages/contacts" class="menu-link">Контакты</a></li>
+             
+             
+
+           <li class="menu-item"><a href="/assets/documents/terms_ukr.pdf" class="menu-link">Условия и положения</a></li>
+             
+             
           </ul>
-          <button class="burger-menu hidden"></button>
+          <button id="burger-menu" class="burger-menu hidden"></button>
         </nav>
 
       </header>
@@ -67,7 +99,7 @@
       </tr>
     </th>
     <th>
-      <select id="port-start" onchange="filter('');">
+      <select id="port-start" onchange="filterPort('');">
         <option value="%">Выберите порт</option>
         <option value="batumi">Батуми</option>
         <option value="poti">Поти</option>
@@ -76,7 +108,7 @@
     </th>
     <th></th>
     <th>
-      <select id="port-end" onchange="filter('');">
+      <select id="port-end" onchange="filterPort('');">
         <option value="%">Выберите порт</option>
         <option value="batumi">Батуми</option>
         <option value="poti">Поти</option>
@@ -88,45 +120,45 @@
   
   <tbody id="schedule">
     <tr>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-10-26</td>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-10-28</td>
+      <td data-direction="departure" data-port="poti">Поти</td>
+      <td data-direction="departure" data-port="poti">2021-10-26</td>
+      <td data-direction="destination" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-10-28</td>
     </tr>
     
     <tr>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-10-28</td> 
-      <td data-port="batumi">Батуми</td>
-      <td data-port="batumi">2021-10-30</td>
+      <td data-direction="departure" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-10-28</td> 
+      <td data-direction="destination" data-port="batumi">Батуми</td>
+      <td data-direction="destination" data-port="batumi">2021-10-30</td>
     </tr>
     
     <tr>
-      <td data-port="batumi">Батуми</td>
-      <td data-port="batumi">2021-10-30</td>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-02</td>
+      <td data-direction="departure" data-port="batumi">Батуми</td>
+      <td data-direction="departure" data-port="batumi">2021-10-30</td>
+      <td data-direction="destination" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-02</td>
     </tr>
     
     <tr>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-02</td>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-11-04</td>
+      <td data-direction="departure" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-02</td>
+      <td data-direction="destination" data-port="poti">Поти</td>
+      <td data-direction="destination" data-port="poti">2021-11-04</td>
     </tr>
 
     <tr>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-11-05</td>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-07</td>
+      <td data-direction="departure" data-port="poti">Поти</td>
+      <td data-direction="departure" data-port="poti">2021-11-05</td>
+      <td data-direction="destination" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-07</td>
     </tr>
     
     <tr>
-      <td data-port="chernomorsk">Черноморск</td>
-      <td data-port="chernomorsk">2021-11-07</td>
-      <td data-port="poti">Поти</td>
-      <td data-port="poti">2021-11-09</td>
+      <td data-direction="departure" data-port="chernomorsk">Черноморск</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-07</td>
+      <td data-direction="destination" data-port="poti">Поти</td>
+      <td data-direction="destination" data-port="poti">2021-11-09</td>
     </tr>
   </tbody>
 </table>
@@ -149,8 +181,8 @@
  
  <aside class="sidebar">
       <div class="language-block">
-        <button class="language language-rus">Рус</button>
-        <button class="language language-eng">Eng</button>
+        <button id="btn-rus" class="language language-rus">Рус</button>
+        <button id="btn-eng" class="language language-eng">Eng</button>
       </div>
     </aside>
 

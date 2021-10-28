@@ -1,0 +1,98 @@
+{% include "header.njk" %}
+      <!-- Основной контент страницы -->
+
+<main class="main-content content-schedule">
+  <h2 class="subpage-title"> {{ mainTitle }} </h2>
+  <section class="section-chedule">
+
+  <div class="table-container">
+	<table class="table-schedule">
+    <thead>
+    <th>
+      <tr>
+          <th>Port of shipment</th>
+          <th>Departure date</th>
+          <th>Port of destination</th>
+          <th>Arrival date</th>
+      </tr>
+    </th>
+    <th>
+      <select id="port-start" onchange="filterPort('');">
+        <option value="%">Select from list</option>
+        <option value="batumi">Batumi</option>
+        <option value="poti">Poti</option>
+        <option value="chernomorsk">Chornomorsk</option>
+      </select>
+    </th>
+    <th></th>
+    <th>
+      <select id="port-end" onchange="filterPort('');">
+        <option value="%">Select from list</option>
+        <option value="batumi">Batumi</option>
+        <option value="poti">Poti</option>
+        <option value="chernomorsk">Chornomorsk</option>
+      </select>
+    </th>
+    <th></th>
+  </thead>
+  
+  <tbody id="schedule">
+    <tr>
+      <td data-direction="departure" data-port="poti">Poti</td>
+      <td data-direction="departure" data-port="poti">2021-10-26</td>
+      <td data-direction="destination" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-10-28</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-10-28</td> 
+      <td data-direction="destination" data-port="batumi">Batumi</td>
+      <td data-direction="destination" data-port="batumi">2021-10-30</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="batumi">Batumi</td>
+      <td data-direction="departure" data-port="batumi">2021-10-30</td>
+      <td data-direction="destination" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-02</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-02</td>
+      <td data-direction="destination" data-port="poti">Poti</td>
+      <td data-direction="destination" data-port="poti">2021-11-04</td>
+    </tr>
+
+    <tr>
+      <td data-direction="departure" data-port="poti">Poti</td>
+      <td data-direction="departure" data-port="poti">2021-11-05</td>
+      <td data-direction="destination" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="destination" data-port="chernomorsk">2021-11-07</td>
+    </tr>
+    
+    <tr>
+      <td data-direction="departure" data-port="chernomorsk">Chornomorsk</td>
+      <td data-direction="departure" data-port="chernomorsk">2021-11-07</td>
+      <td data-direction="destination" data-port="poti">Poti</td>
+      <td data-direction="destination" data-port="poti">2021-11-09</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+  <p class="tariff-text">
+    The current tariffs for the carriage of goods and passengers are listed <a href="https://www.ukrferry.com/en/tariffs" target="_black">here</a>
+  </p>
+
+  <p class="tariff-text">
+    You can <a href="https://bookhere.ukrferry.com/eng" target="_black">booking</a> places on a ferry for passengers and private vehicle
+  </p>
+</section>
+
+
+</main>
+
+{% include "sidebar.njk" %}
